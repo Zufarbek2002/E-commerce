@@ -1,0 +1,48 @@
+#advertising {
+    background-image: url(../../assets/images/articles/bg_img.png);
+    position: sticky;
+    top: 76px;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.advertising__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.advertising__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $onSurface;
+}
+
+// responsive part
+@media screen and (max-width: 1170px) {
+    .advertising__title {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .advertising__title {
+        font-size: 24px;
+        line-height: 27px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .advertising__img {
+        display: none;
+    }
+
+    .advertising__title {
+        font-size: 18px;
+        padding: 27px 0;
+    }
+}
