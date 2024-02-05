@@ -70,6 +70,7 @@ img {
   right: 0;
   background-color: #fff;
   margin-bottom: 4px;
+  z-index: 10;
 }
 
 .header__container {
