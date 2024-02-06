@@ -1,0 +1,28 @@
+.product_main__container {
+  padding: 44px 0 166px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 50px;
+}
+
+.res__btn {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  width: 95%;
+}
+
+.res_box {
+  padding-bottom: 50px;
+}
+
+.search__link--btn {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=products.css.map */

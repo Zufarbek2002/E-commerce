@@ -1,0 +1,20 @@
+.product_main__container{
+    padding: 44px 0 166px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.res__btn{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    width: 95%;
+}
+.res_box{
+    padding-bottom: 50px;
+}
+.search__link--btn{
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}

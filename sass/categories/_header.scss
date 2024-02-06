@@ -1,0 +1,52 @@
+.btn__boxes {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    background-color: #fff;
+    width: 100vw;
+    box-shadow: 0px 8px 16px 0px #00000026;
+    display: none;
+}
+
+.btn__box {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.btn__link {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $onSurface;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.open {
+    display: block;
+}
+
+// global link styles
+.global__link_box {
+    margin-top: 24px;
+    padding: 3px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 148px;
+}
+
+.global__link {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $onSurface;
+}
+.global__link--active{
+    color:#8F8F8F;
+}
