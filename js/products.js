@@ -27,7 +27,7 @@ function proBox(products) {
 proBox(products);
 
 inp.addEventListener('input', e => {
-    let b = e.target.value;
+    let b = e.target.value.toLowerCase();
     let users = products;
     users = users.filter((user) => user.name.toLowerCase().includes(b))
 

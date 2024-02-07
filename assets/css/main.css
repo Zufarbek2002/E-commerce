@@ -1029,6 +1029,25 @@ img {
   gap: 24px;
 }
 
+.btn_icons {
+  position: relative;
+}
+.btn_icons i {
+  position: absolute;
+}
+
+.close_icon {
+  top: -100px;
+}
+
+.openX {
+  top: 0;
+}
+
+.closeBur {
+  top: -100px;
+}
+
 .btn__link {
   font-size: 16px;
   font-weight: 700;
