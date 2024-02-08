@@ -55,10 +55,10 @@
     margin-top: 24px;
     padding: 3px 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 16px;
     width: 100%;
-    max-width: 148px;
+    flex-wrap: wrap;
 }
 
 .global__link {

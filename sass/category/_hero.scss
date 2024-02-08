@@ -1,0 +1,124 @@
+.carusel__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-top: 24px;
+    margin-bottom: 120px;
+}
+
+.carusel__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: $onSurface;
+}
+
+.carusel__rate_box {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.carusel__save_box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.carusel__text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $hardest;
+}
+
+.product__rate_persons {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-left: 8px;
+    text-decoration: underline;
+}
+
+.carusel__boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carusel__img_box {
+    width: 45%;
+    display: flex;
+    gap: 25px;
+}
+
+.main_img {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.img_box {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.image{
+    width: 100%;
+}
+
+.carusel__text_box {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.carusel__price_card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.carusel__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 279px;
+    background-color: $primary;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 0;
+    margin: 0 auto;
+}
+
+.carusel__btn_text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    width: 100%;
+    max-width: 207px;
+    color: #fff;
+}
+
+@media screen and (max-width: 780px) {
+    .carusel__boxes{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .carusel__img_box{
+        width: 100%;
+    }
+    .carusel__text_box{
+        width: 100%;
+    }
+}

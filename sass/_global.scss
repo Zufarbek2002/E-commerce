@@ -46,6 +46,10 @@ img {
     margin: 0 auto;
 }
 
+button{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1000px) {
     .container{
         width: 90%;

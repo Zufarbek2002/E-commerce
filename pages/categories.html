@@ -85,12 +85,32 @@
           </li>
         </ul>
 
+        <div class="header__modal">
+          <div class="modal_content">
+            <div class="modal__close">
+              <i class="fa-solid fa-xmark" style="color: #414141;"></i>
+            </div>
+            <form class="modal_form">
+              <h2 class="modal_form__title">Вход</h2>
+              <div class="modal_form__inp">
+                <label for="number" class="number_label">Телефон</label>
+                <input type="number" name="number" id="number" placeholder="Phone..." required>
+              </div>
+              <button class="modal__btn">Вход</button>
+              <div class="modal__links">
+                <a href="#" class="modal__regist">Регистрация</a>
+                <a href="#" class="modal__pas">Забыли пароль?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
         <div class="header__entry">
           <div class="entry__person">
             <img src="../assets/images/articles/avatar.png" alt="avatar" />
             <h2 class="header__entry_text">Алексей</h2>
           </div>
-          <a href="#" class="entry__link">
+          <a href="" class="entry__link">
             <i class="fa-solid fa-chevron-down" style="color: #000000"></i>
           </a>
         </div>
@@ -180,6 +200,7 @@
 
     <script src="../js/categories-data.js"></script>
     <script src="../js/categories.js"></script>
+    <script src="../js/home.js"></script>
     <script
       src="https://kit.fontawesome.com/f8ca3b2196.js"
       crossorigin="anonymous"

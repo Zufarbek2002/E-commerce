@@ -15,8 +15,10 @@ function products(categories) {
     categories.forEach((data) => {
         str += `
         <div class = "data_box">
-            <img src="${data.image}" alt="advertising img" class = "data_img" />
-            <p class = "data_name">${data.name}</p>
+            <a href="./category.html" class = "img_link">
+                <img src="${data.image}" alt="advertising img" class = "data_img" />
+                <p class = "data_name">${data.name}</p>
+            </a>
         </div>
         `
     });

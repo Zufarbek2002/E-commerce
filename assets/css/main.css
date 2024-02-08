@@ -52,6 +52,10 @@ img {
   margin: 0 auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1000px) {
   .container {
     width: 90%;
@@ -255,6 +259,179 @@ img {
   max-width: 217px;
 }
 
+.header__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(252, 213, 186, 0.8);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__modal.open_modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal_content {
+  width: 100%;
+  max-width: 420px;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 8px 16px 32px 0px rgba(255, 102, 51, 0.2);
+          box-shadow: 8px 16px 32px 0px rgba(255, 102, 51, 0.2);
+}
+
+.modal_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 32px;
+  padding: 40px 40px 40px 80px;
+}
+
+.modal__close {
+  background-color: #F3F2F1;
+  padding: 8px;
+  border-radius: 4px;
+  width: 40px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: right;
+}
+
+.modal_form__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #414141;
+}
+
+.modal_form__inp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.number_label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #8F8F8F;
+}
+
+#number {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #414141;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid #70C05B;
+  outline: none;
+}
+#number:focus {
+  -webkit-box-shadow: 4px 8px 16px 0px rgba(112, 192, 91, 0.2);
+          box-shadow: 4px 8px 16px 0px rgba(112, 192, 91, 0.2);
+}
+#number::-webkit-input-placeholder {
+  color: #8F8F8F;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+#number::-moz-placeholder {
+  color: #8F8F8F;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+#number:-ms-input-placeholder {
+  color: #8F8F8F;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+#number::-ms-input-placeholder {
+  color: #8F8F8F;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+#number::placeholder {
+  color: #8F8F8F;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+
+.modal__btn {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #FF6633;
+  background-color: #FCD5BA;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.modal__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal__regist {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #70C05B;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  padding: 4px 8px;
+  max-width: 121px;
+  width: 100%;
+}
+
+.modal__pas {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #606060;
+}
+
 .entry__person {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,6 +502,16 @@ img {
   }
   .header__entry {
     width: 0;
+  }
+}
+@media screen and (max-width: 390px) {
+  .modal_form {
+    padding: 40px 20px 40px 40px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .modal_form {
+    padding: 40px 10px 40px 20px;
   }
 }
 #advertising {
@@ -1068,14 +1255,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 16px;
   width: 100%;
-  max-width: 148px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .global__link {
@@ -1128,6 +1314,10 @@ img {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.img_link {
+  width: 100%;
 }
 
 .data_name {
@@ -1199,4 +1389,177 @@ img {
   background-color: inherit;
   border: none;
   cursor: pointer;
+}
+
+.carusel__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 16px;
+  margin-top: 24px;
+  margin-bottom: 120px;
+}
+
+.carusel__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #414141;
+}
+
+.carusel__rate_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.carusel__save_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.carusel__text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #606060;
+}
+
+.product__rate_persons {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-left: 8px;
+  text-decoration: underline;
+}
+
+.carusel__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.carusel__img_box {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+.main_img {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.img_box {
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 16px;
+}
+
+.image {
+  width: 100%;
+}
+
+.carusel__text_box {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 16px;
+}
+
+.carusel__price_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.carusel__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 279px;
+  background-color: #FF6633;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 0;
+  margin: 0 auto;
+}
+
+.carusel__btn_text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  width: 100%;
+  max-width: 207px;
+  color: #fff;
+}
+
+@media screen and (max-width: 780px) {
+  .carusel__boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 40px;
+  }
+  .carusel__img_box {
+    width: 100%;
+  }
+  .carusel__text_box {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

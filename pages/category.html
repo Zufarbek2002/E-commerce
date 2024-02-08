@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <title>Category</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container header__container">
+        <div class="header__logo">
+          <a href="../index.html" class="header__logo_link">
+            <img
+              src="../assets/images/articles/logo.svg"
+              alt="Logo"
+              class="img_desk"
+            />
+            <img
+              src="../assets/images/articles/logo (1).svg"
+              alt="Logo respon"
+              class="img_table"
+            />
+          </a>
+        </div>
+
+        <div class="header__btn">
+          <button class="btn">
+            <a href="./categories.html" class="btn__icon">
+              <i class="fa-solid fa-bars fa-xl" style="color: #ffffff"></i>
+            </a>
+            <a href="./categories.html" class="btn__text">Каталог</a>
+          </button>
+
+          <form class="header__search">
+            <input
+              type="text"
+              name="search_panel"
+              id="input_search"
+              placeholder="Найти товар"
+            />
+            <button class="search__link search__link--btn" type="submit">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="color: #000000"
+              ></i>
+            </button>
+          </form>
+        </div>
+
+        <ul class="header__icons_ul">
+          <li class="header__icons_list">
+            <i class="fa-regular fa-heart fa-lg" style="color: #000000"></i>
+            <p class="header__icons_text">Избранное</p>
+          </li>
+          <li class="header__icons_list">
+            <i class="fa-solid fa-box fa-lg" style="color: #000000"></i>
+            <p class="header__icons_text">продукты</p>
+          </li>
+          <li class="header__icons_list">
+            <i
+              class="fa-solid fa-cart-shopping fa-lg"
+              style="color: #000000"
+            ></i>
+            <p class="header__icons_text">Корзина</p>
+          </li>
+        </ul>
+
+        <div class="header__modal">
+          <div class="modal_content">
+            <div class="modal__close">
+              <i class="fa-solid fa-xmark" style="color: #414141"></i>
+            </div>
+            <form class="modal_form">
+              <h2 class="modal_form__title">Вход</h2>
+              <div class="modal_form__inp">
+                <label for="number" class="number_label">Телефон</label>
+                <input
+                  type="number"
+                  name="number"
+                  id="number"
+                  placeholder="Phone..."
+                  required
+                />
+              </div>
+              <button class="modal__btn">Вход</button>
+              <div class="modal__links">
+                <a href="#" class="modal__regist">Регистрация</a>
+                <a href="#" class="modal__pas">Забыли пароль?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="header__entry">
+          <div class="entry__person">
+            <img src="../assets/images/articles/avatar.png" alt="avatar" />
+            <h2 class="header__entry_text">Алексей</h2>
+          </div>
+          <a href="#" class="entry__link">
+            <i class="fa-solid fa-chevron-down" style="color: #000000"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    ''
+
+    <main id="main" class="main">
+      <div class="container">
+        <div class="global__link_box">
+          <a href="../index.html" class="global__link">Главная</a>
+          <i class="fa-solid fa-chevron-right fa-xs" style="color: #414141"></i>
+          <a href="./categories.html" class="global__link global__link"
+            >Каталог</a
+          >
+          <i class="fa-solid fa-chevron-right fa-xs" style="color: #414141"></i>
+          <a href="#" class="global__link global__link">Молоко, сыр, яйцо</a>
+          <i class="fa-solid fa-chevron-right fa-xs" style="color: #414141"></i>
+          <a href="#" class="global__link global__link--active"
+            >Масло ПРОСТОКВАШИНО сливочное в/с 82% фольга без змж, Россия, 180
+            г</a
+          >
+        </div>
+      </div>
+
+      <section id="carusel__hero" class="carusel__hero">
+        <div class="container carusel__container">
+          <h3 class="carusel__title">
+            Масло ПРОСТОКВАШИНО сливочное в/с 82% фольга без змж, Россия, 180 г
+          </h3>
+          <div class="carusel__rate_box">
+            <p class="carusel__text">арт. 371431</p>
+            <div class="product__rate">
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <a href="#" class="product__rate_persons">3 отзыва</a>
+            </div>
+            <div class="carusel__save_box">
+              <i class="fa-solid fa-share-nodes" style="color: #000000"></i>
+              <p class="carusel__text">Поделиться</p>
+            </div>
+            <div class="carusel__save_box">
+              <i class="fa-regular fa-heart" style="color: #000000"></i>
+              <p class="carusel__text">В избраное</p>
+            </div>
+          </div>
+
+          <div class="carusel__boxes">
+            <div class="carusel__img_box">
+              <div class="second_img"></div>
+
+              <div class="main_img">
+                <img src="" alt="" />
+              </div>
+            </div>
+
+            <div class="carusel__text_box">
+              <div class="carusel__price_card">
+                <div class="price__box">
+                  <h3>192,69 ₽</h3>
+                  <p>Обычная цена</p>
+                </div>
+                <div class="price__box">
+                  <h3>108,99 ₽</h3>
+                  <p>С картой Северяночки</p>
+                </div>
+              </div>
+
+              <button class="carusel__btn">
+                <i
+                  class="fa-solid fa-cart-shopping fa-lg"
+                  style="color: #fff"
+                ></i>
+                <h2 class="carusel__btn_text">В корзину</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="catg__product" class="catg__product">
+        <div class="container">
+          <div class="stock">
+            <div class="stock__title">
+              <h2 class="stock__text">С этим товаров мокупают</h2>
+            </div>
+
+            <div class="products">
+              <div class="product__box">
+                <div class="product__img">
+                  <img
+                    src="../assets/images/products/23.png"
+                    alt="product img"
+                  />
+                  <div class="product__save">
+                    <i
+                      class="fa-regular fa-heart fa-lg"
+                      style="color: #000000"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="product__box_text">
+
+                    <div class="price__part news__price">
+                      <h3 class="price__text--bold">599,99₽</h3>
+                    </div>
+
+                  <h3 class="product__info">
+                    Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                  </h3>
+
+                  <div class="product__rate">
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                  </div>
+
+                  <button class="product__btn">В корзину</button>
+                </div>
+              </div>
+              <div class="product__box">
+                <div class="product__img">
+                  <img
+                    src="../assets/images/products/23.png"
+                    alt="product img"
+                  />
+                  <div class="product__save">
+                    <i
+                      class="fa-regular fa-heart fa-lg"
+                      style="color: #000000"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="product__box_text">
+
+                    <div class="price__part news__price">
+                      <h3 class="price__text--bold">599,99₽</h3>
+                    </div>
+
+                  <h3 class="product__info">
+                    Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                  </h3>
+
+                  <div class="product__rate">
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                  </div>
+
+                  <button class="product__btn">В корзину</button>
+                </div>
+              </div>
+              <div class="product__box">
+                <div class="product__img">
+                  <img
+                    src="../assets/images/products/23.png"
+                    alt="product img"
+                  />
+                  <div class="product__save">
+                    <i
+                      class="fa-regular fa-heart fa-lg"
+                      style="color: #000000"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="product__box_text">
+
+                    <div class="price__part news__price">
+                      <h3 class="price__text--bold">599,99₽</h3>
+                    </div>
+
+                  <h3 class="product__info">
+                    Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                  </h3>
+
+                  <div class="product__rate">
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                  </div>
+
+                  <button class="product__btn">В корзину</button>
+                </div>
+              </div>
+              <div class="product__box">
+                <div class="product__img">
+                  <img
+                    src="../assets/images/products/23.png"
+                    alt="product img"
+                  />
+                  <div class="product__save">
+                    <i
+                      class="fa-regular fa-heart fa-lg"
+                      style="color: #000000"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="product__box_text">
+
+                    <div class="price__part news__price">
+                      <h3 class="price__text--bold">599,99₽</h3>
+                    </div>
+
+                  <h3 class="product__info">
+                    Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                  </h3>
+
+                  <div class="product__rate">
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                  </div>
+
+                  <button class="product__btn">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stock">
+            <div class="stock__title">
+              <h2 class="stock__text">Акции</h2>
+              <div class="all_product">
+                <a href="./pages/products.html" class="product__text">Все продукты</a>
+                <i
+                  class="fa-solid fa-chevron-right"
+                  style="color: #606060; padding-top: 5px"
+                ></i>
+              </div>
+            </div>
+
+            <div class="products">
+              <div class="product__box">
+                <div class="product__img">
+                  <img
+                    src="../assets/images/products/13.png"
+                    alt="product img"
+                  />
+                  <div class="product__save">
+                    <i
+                      class="fa-regular fa-heart fa-lg"
+                      style="color: #000000"
+                    ></i>
+                  </div>
+                  <div class="product__discount">-50%</div>
+                </div>
+
+                <div class="product__box_text">
+                  <div class="product__price">
+                    <div class="price__part">
+                      <h3 class="price__text--bold">44,50₽</h3>
+                      <p class="price__p">С картой</p>
+                    </div>
+                    <div class="price__part">
+                      <h3 class="price__text">50,50₽</h3>
+                      <p class="price__p">Обычная</p>
+                    </div>
+                  </div>
+
+                  <h3 class="product__info">
+                    Г/Ц Блинчики с мясом вес, Россия
+                  </h3>
+
+                  <div class="product__rate">
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                  </div>
+
+                  <button class="product__btn">В корзину</button>
+                </div>
+              </div>
+              <div class="product__box">
+                <div class="product__img">
+                  <img
+                    src="../assets/images/products/13.png"
+                    alt="product img"
+                  />
+                  <div class="product__save">
+                    <i
+                      class="fa-regular fa-heart fa-lg"
+                      style="color: #000000"
+                    ></i>
+                  </div>
+                  <div class="product__discount">-50%</div>
+                </div>
+
+                <div class="product__box_text">
+                  <div class="product__price">
+                    <div class="price__part">
+                      <h3 class="price__text--bold">44,50₽</h3>
+                      <p class="price__p">С картой</p>
+                    </div>
+                    <div class="price__part">
+                      <h3 class="price__text">50,50₽</h3>
+                      <p class="price__p">Обычная</p>
+                    </div>
+                  </div>
+
+                  <h3 class="product__info">
+                    Г/Ц Блинчики с мясом вес, Россия
+                  </h3>
+
+                  <div class="product__rate">
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                  </div>
+
+                  <button class="product__btn">В корзину</button>
+                </div>
+              </div>
+              <div class="product__box">
+                <div class="product__img">
+                  <img
+                    src="../assets/images/products/13.png"
+                    alt="product img"
+                  />
+                  <div class="product__save">
+                    <i
+                      class="fa-regular fa-heart fa-lg"
+                      style="color: #000000"
+                    ></i>
+                  </div>
+                  <div class="product__discount">-50%</div>
+                </div>
+
+                <div class="product__box_text">
+                  <div class="product__price">
+                    <div class="price__part">
+                      <h3 class="price__text--bold">44,50₽</h3>
+                      <p class="price__p">С картой</p>
+                    </div>
+                    <div class="price__part">
+                      <h3 class="price__text">50,50₽</h3>
+                      <p class="price__p">Обычная</p>
+                    </div>
+                  </div>
+
+                  <h3 class="product__info">
+                    Г/Ц Блинчики с мясом вес, Россия
+                  </h3>
+
+                  <div class="product__rate">
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                  </div>
+
+                  <button class="product__btn">В корзину</button>
+                </div>
+              </div>
+              <div class="product__box">
+                <div class="product__img">
+                  <img
+                    src="../assets/images/products/13.png"
+                    alt="product img"
+                  />
+                  <div class="product__save">
+                    <i
+                      class="fa-regular fa-heart fa-lg"
+                      style="color: #000000"
+                    ></i>
+                  </div>
+                  <div class="product__discount">-50%</div>
+                </div>
+
+                <div class="product__box_text">
+                  <div class="product__price">
+                    <div class="price__part">
+                      <h3 class="price__text--bold">44,50₽</h3>
+                      <p class="price__p">С картой</p>
+                    </div>
+                    <div class="price__part">
+                      <h3 class="price__text">50,50₽</h3>
+                      <p class="price__p">Обычная</p>
+                    </div>
+                  </div>
+
+                  <h3 class="product__info">
+                    Г/Ц Блинчики с мясом вес, Россия
+                  </h3>
+
+                  <div class="product__rate">
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                    <i class="fa-solid fa-star fa-xs"></i>
+                  </div>
+
+                  <button class="product__btn">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo">
+          <a href="#"
+            ><img
+              src="../assets/images/articles/logo_footer.svg"
+              alt="logo footer"
+          /></a>
+        </div>
+        <ul class="footer__ul">
+          <li class="footer__list">
+            <a href="#" class="footer__list_link">О компании</a>
+          </li>
+          <li class="footer__list">
+            <a href="#" class="footer__list_link">Контакты</a>
+          </li>
+          <li class="footer__list">
+            <a href="#" class="footer__list_link">Вакансии</a>
+          </li>
+          <li class="footer__list">
+            <a href="#" class="footer__list_link">Статьи</a>
+          </li>
+          <li class="footer__list">
+            <a href="#" class="footer__list_link"
+              >Политика обработки персональных данных</a
+            >
+          </li>
+        </ul>
+
+        <ul class="footer__icons">
+          <li class="footer__icons_list">
+            <a href="#" class="footer__icons_link">
+              <i class="fa-brands fa-instagram" style="color: #ff0000"></i>
+            </a>
+          </li>
+          <li class="footer__icons_list">
+            <a href="#" class="footer__icons_link">
+              <i class="fa-brands fa-vk" style="color: #0561ff"></i>
+            </a>
+          </li>
+          <li class="footer__icons_list">
+            <a href="#" class="footer__icons_link">
+              <i
+                class="fa-brands fa-square-facebook"
+                style="color: #0050db"
+              ></i>
+            </a>
+          </li>
+          <li class="footer__icons_list">
+            <a href="#" class="footer__icons_link">
+              <i class="fa-brands fa-odnoklassniki" style="color: #ffae00"></i>
+            </a>
+          </li>
+        </ul>
+
+        <div class="footer__contact">
+          <div class="number">
+            <i class="fa-solid fa-phone" style="color: #000"></i>
+            <p class="number__p">8 800 777 33 33</p>
+          </div>
+          <div class="number__logo">
+            <p class="logo__p">Дизайн</p>
+            <img
+              src="../assets/images/articles/logo-zasovskiy-small-black.svg"
+              alt="number logo"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/home.js"></script>
+    <script src="../js/products-data.js"></script>
+    <script src="../js/category.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f8ca3b2196.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
