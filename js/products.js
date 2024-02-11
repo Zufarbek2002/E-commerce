@@ -17,7 +17,10 @@ function proBox(products) {
                 </div>
                 <p class = "product__info">${data.description}</p>
                 <p class = "product__info">Rate: ${data.rating}</p>
-                <button class="product__btn res__btn">В корзину</button>
+                <a href="./category.html">
+                    <button class="product__btn res__btn" onclick = "btn(${data.id})">Details</button>
+                </a>
+
             </div>
         </div>
         `
@@ -34,3 +37,12 @@ inp.addEventListener('input', e => {
     proBox(users);
 
 })
+const productLink = document.querySelector('.product__btn')
+
+function btn(a) {
+    products.forEach(data => {
+        if(data.id == a)
+            localStorage.setItem('data', JSON.stringify(data))
+
+    })
+}
