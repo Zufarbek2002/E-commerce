@@ -14,7 +14,7 @@ function productsData(data) {
                 <p class = "product_cart__price">${data.price} ₽ <span>за шт.</span></p>
             </div>
             <div class = "product_cart__btn">
-                <button class = "btn" onclick = "removeBtn(${data.id}">-</button>
+                <button class = "btn" onclick = "removeBtn(${data.id})">-</button>
                     ${data.count}
                 <button class = "btn">+</button>
             </div>
@@ -28,7 +28,10 @@ function productsData(data) {
 productsData(data);
 
 function removeBtn(productId) {
-    let newData = data.filter((pr) => pr.id !== productId);
-    localStorage.setItem('dataCart', JSON.stringify(newData));
-    productsData(newData);
+    if (confirm("Sure, this order delete?")) {
+        let data = JSON.parse(localStorage.getItem('dataCart'))
+        let newData = data.filter((pr) => pr.id !== productId);
+        localStorage.setItem('dataCart', JSON.stringify(newData));
+        productsData(newData);
+    }
 }

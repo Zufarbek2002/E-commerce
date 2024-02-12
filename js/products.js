@@ -33,9 +33,7 @@ inp.addEventListener('input', e => {
     let b = e.target.value.toLowerCase();
     let users = products;
     users = users.filter((user) => user.name.toLowerCase().includes(b))
-
     proBox(users);
-
 })
 const productLink = document.querySelector('.product__btn')
 
