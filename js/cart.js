@@ -16,7 +16,7 @@ function productsData(data) {
             <div class = "product_cart__btn">
                 <button class = "btn" onclick = "removeBtn(${data.id})">-</button>
                     ${data.count}
-                <button class = "btn">+</button>
+                <button class = "btn" onclick = "addBtn(${data.id})">+</button>
             </div>
             <h3>${data.price * data.count} ₽</h3>
         </div>
@@ -27,11 +27,36 @@ function productsData(data) {
 
 productsData(data);
 
+function addBtn(productId) {
+    let data = JSON.parse(localStorage.getItem('dataCart'))
+    let newData = data.map((pr) => pr.id == productId
+    ? {
+        ...pr,
+        count: pr.count + 1,
+    }: pr);
+    localStorage.setItem('dataCart', JSON.stringify(newData));
+    productsData(newData);
+}
+
 function removeBtn(productId) {
-    if (confirm("Sure, this order delete?")) {
-        let data = JSON.parse(localStorage.getItem('dataCart'))
-        let newData = data.filter((pr) => pr.id !== productId);
-        localStorage.setItem('dataCart', JSON.stringify(newData));
-        productsData(newData);
-    }
+    let data = JSON.parse(localStorage.getItem('dataCart'))
+    let newData = data.map((pr) => pr.id == productId
+    ? {
+        ...pr,
+        count: pr.count > 1 ? pr.count - 1 : 1,
+    }: pr);
+
+    let hasData = data.filter((pr) => pr.id == productId);
+    hasData.forEach(e => hasId = e.count)
+
+    if(hasId > 1) {
+            localStorage.setItem('dataCart', JSON.stringify(newData));
+            productsData(newData);
+        }
+        else if (confirm("Sure, this order delete?")) {
+            let data = JSON.parse(localStorage.getItem('dataCart'))
+            let newData = data.filter((pr) => pr.id !== productId);
+            localStorage.setItem('dataCart', JSON.stringify(newData));
+            productsData(newData);
+        }
 }

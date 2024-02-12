@@ -66,7 +66,7 @@ function btnCart(a) {
         if(data.id == a && !checkData){
             dataAll = [...dataAll, {
                 ...data,
-                count: 1
+                count: 3
             }]
         }
     })
